@@ -1,0 +1,150 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta Vaani', sans-serif;
+  text-align: center;
+  background: #F5F7FA;
+}
+
+.search-container {
+  padding: 50px 0;
+}
+.search-container input {
+  width: 400px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+  font-family: 'Mukta Vaani', sans-serif;
+  border-radius: 0;
+}
+
+.card {
+  display: inline-block;
+  margin: 0 0 50px;
+  width: 400px;
+  background: #fff;
+  -webkit-box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  vertical-align: top;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+@media (min-width: 768px) {
+  .card {
+    margin: 0 50px 50px;
+  }
+}
+.card * {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+.card .card-hero {
+  position: relative;
+  height: 200px;
+}
+.card .card-hero img {
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.card .card-bar {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.card .card-bar .card-club {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  float: left;
+  border-right: 1px solid #eee;
+}
+.card .card-bar .card-club img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.card .card-bar .card-name {
+  display: inline-block;
+  width: calc(100% - 150px);
+}
+.card .card-bar .card-name h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+  font-weight: 200;
+  font-size: 28px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+.card .card-bar .card-rating {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: right;
+  border-left: 1px solid #eee;
+}
+.card .card-bar .card-rating h1 {
+  padding: 0;
+  margin: 0;
+  line-height: 60px;
+}
+.card .card-special {
+  background: #6A50A7;
+}
+.card .card-special p {
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.card .card-stats {
+  text-align: left;
+  padding: 20px;
+}
+.card .card-stats .stats-player {
+  width: 100%;
+}
+.card .card-stats .stats-player td {
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+.card .card-stats .stats-player td:first-of-type {
+  text-transform: uppercase;
+}
+.card .card-stats .stats-player td:last-of-type {
+  font-weight: 200;
+}
+.card .card-stats .stats-card {
+  margin-top: 20px;
+}
+.card .card-stats .stats-card .stat {
+  display: inline-block;
+  width: 33.33%;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+.card .card-stats .stats-card .stat:nth-of-type(3n) {
+  border-right: 0;
+}
+.card .card-stats .stats-card .stat:nth-of-type(1n+4) {
+  border-bottom: 1px solid #eee;
+}

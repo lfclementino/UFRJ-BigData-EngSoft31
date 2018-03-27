@@ -1,0 +1,147 @@
+$bar-height: 60px;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mukta Vaani', sans-serif;
+  text-align: center;
+  background: #F5F7FA;
+}
+
+.search-container {
+  padding: 50px 0;
+  input {
+    width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Mukta Vaani', sans-serif;
+    border-radius: 0;
+  }
+}
+
+.card {
+  @media (min-width: 768px) {
+    margin: 0 50px 50px;
+  }
+  display: inline-block;
+  margin: 0 0 50px;
+  width: 400px;
+  background: #fff;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  vertical-align: top;
+  transition: all .3s;
+  * {
+    transition: all .3s;
+  }
+  .card-hero {
+    position: relative;
+    height: 200px;
+    img {
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .card-bar {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    .card-club {
+      position: relative;
+      display: inline-block;
+      width: $bar-height;
+      height: $bar-height;
+      float: left;
+      border-right: 1px solid #eee;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .card-name {
+      display: inline-block;
+      width: calc(100% - 150px);
+      
+      h1 {
+        padding: 0;
+        margin: 0;
+        line-height: $bar-height;
+        font-weight: 200;
+        font-size: 28px;
+        letter-spacing: 1px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+      }
+    }
+    .card-rating {
+      display: inline-block;
+      height: $bar-height;
+      width: $bar-height;
+      float: right;
+      border-left: 1px solid #eee;
+      h1 {
+        padding: 0;
+        margin: 0;
+        line-height: $bar-height;
+      }
+    }
+  }
+  .card-special {
+    background: #6A50A7;
+    p {
+      margin: 0;
+      padding: 10px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  .card-stats {
+    text-align: left;
+    padding: 20px;
+    
+    .stats-player {
+      width: 100%;
+      td {
+        padding: 10px 0;
+        letter-spacing: 1px;
+      }
+      td:first-of-type {
+        text-transform: uppercase;
+      }
+      td:last-of-type {
+        font-weight: 200;
+      }
+    }
+    
+    .stats-card {
+      margin-top: 20px;
+      
+      .stat {
+        display: inline-block;
+        width: 33.33%;
+        padding: 10px 0;
+        border-top: 1px solid #eee;
+        border-right: 1px solid #eee;
+        box-sizing: border-box;
+        text-align: center;
+        
+        &:nth-of-type(3n) {
+          border-right: 0;
+        }
+        &:nth-of-type(1n+4) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+}
